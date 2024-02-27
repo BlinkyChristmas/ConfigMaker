@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		568234C32B8D6152002F0CE1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234C22B8D6152002F0CE1 /* main.cpp */; };
+		568234D52B8D61D8002F0CE1 /* timeutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234CB2B8D61D8002F0CE1 /* timeutil.cpp */; };
+		568234D62B8D61D8002F0CE1 /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234CC2B8D61D8002F0CE1 /* buffer.cpp */; };
+		568234D72B8D61D8002F0CE1 /* mapfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234CD2B8D61D8002F0CE1 /* mapfile.cpp */; };
+		568234D82B8D61D8002F0CE1 /* ClientEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234D22B8D61D8002F0CE1 /* ClientEntry.cpp */; };
+		568234D92B8D61D8002F0CE1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 568234D32B8D61D8002F0CE1 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +28,17 @@
 
 /* Begin PBXFileReference section */
 		568234BF2B8D6152002F0CE1 /* ConfigMaker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConfigMaker; sourceTree = BUILT_PRODUCTS_DIR; };
-		568234C22B8D6152002F0CE1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		568234CA2B8D61D8002F0CE1 /* mapfile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mapfile.hpp; sourceTree = "<group>"; };
+		568234CB2B8D61D8002F0CE1 /* timeutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeutil.cpp; sourceTree = "<group>"; };
+		568234CC2B8D61D8002F0CE1 /* buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buffer.cpp; sourceTree = "<group>"; };
+		568234CD2B8D61D8002F0CE1 /* mapfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapfile.cpp; sourceTree = "<group>"; };
+		568234CE2B8D61D8002F0CE1 /* timeutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = timeutil.hpp; sourceTree = "<group>"; };
+		568234CF2B8D61D8002F0CE1 /* strutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = strutil.hpp; sourceTree = "<group>"; };
+		568234D02B8D61D8002F0CE1 /* dbgutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dbgutil.hpp; sourceTree = "<group>"; };
+		568234D12B8D61D8002F0CE1 /* buffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = buffer.hpp; sourceTree = "<group>"; };
+		568234D22B8D61D8002F0CE1 /* ClientEntry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClientEntry.cpp; sourceTree = "<group>"; };
+		568234D32B8D61D8002F0CE1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		568234D42B8D61D8002F0CE1 /* ClientEntry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ClientEntry.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +55,10 @@
 		568234B62B8D6152002F0CE1 = {
 			isa = PBXGroup;
 			children = (
-				568234C12B8D6152002F0CE1 /* ConfigMaker */,
+				568234D22B8D61D8002F0CE1 /* ClientEntry.cpp */,
+				568234D42B8D61D8002F0CE1 /* ClientEntry.hpp */,
+				568234D32B8D61D8002F0CE1 /* main.cpp */,
+				568234C92B8D61D8002F0CE1 /* utility */,
 				568234C02B8D6152002F0CE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +71,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		568234C12B8D6152002F0CE1 /* ConfigMaker */ = {
+		568234C92B8D61D8002F0CE1 /* utility */ = {
 			isa = PBXGroup;
 			children = (
-				568234C22B8D6152002F0CE1 /* main.cpp */,
+				568234CA2B8D61D8002F0CE1 /* mapfile.hpp */,
+				568234CB2B8D61D8002F0CE1 /* timeutil.cpp */,
+				568234CC2B8D61D8002F0CE1 /* buffer.cpp */,
+				568234CD2B8D61D8002F0CE1 /* mapfile.cpp */,
+				568234CE2B8D61D8002F0CE1 /* timeutil.hpp */,
+				568234CF2B8D61D8002F0CE1 /* strutil.hpp */,
+				568234D02B8D61D8002F0CE1 /* dbgutil.hpp */,
+				568234D12B8D61D8002F0CE1 /* buffer.hpp */,
 			);
-			path = ConfigMaker;
+			path = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +114,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1520;
+				ORGANIZATIONNAME = "Charles Kerr";
 				TargetAttributes = {
 					568234BE2B8D6152002F0CE1 = {
 						CreatedOnToolsVersion = 15.2;
@@ -119,7 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				568234C32B8D6152002F0CE1 /* main.cpp in Sources */,
+				568234D52B8D61D8002F0CE1 /* timeutil.cpp in Sources */,
+				568234D82B8D61D8002F0CE1 /* ClientEntry.cpp in Sources */,
+				568234D72B8D61D8002F0CE1 /* mapfile.cpp in Sources */,
+				568234D92B8D61D8002F0CE1 /* main.cpp in Sources */,
+				568234D62B8D61D8002F0CE1 /* buffer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +277,7 @@
 				DEVELOPMENT_TEAM = CF264WE69M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR;
 			};
 			name = Debug;
 		};
@@ -258,6 +288,7 @@
 				DEVELOPMENT_TEAM = CF264WE69M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR;
 			};
 			name = Release;
 		};
