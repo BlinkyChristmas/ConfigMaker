@@ -65,7 +65,7 @@ int main(int argc, const char* argv[]) {
 #else
             output << "#!/bin/tcsh" << std::endl;
             output << "cd " << currentdirectory.string() << std::endl;
-            output << "./ShowClient " << cfgname << ".cfg" << std::endl;
+            output << "./ShowClient " << cfgname  << std::endl;
 #endif
             output.close() ;
         }
