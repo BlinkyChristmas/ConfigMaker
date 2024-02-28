@@ -18,6 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientEntry.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="utility\buffer.cpp" />
+    <ClCompile Include="utility\mapfile.cpp" />
+    <ClCompile Include="utility\timeutil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientEntry.hpp" />
+    <ClInclude Include="utility\buffer.hpp" />
+    <ClInclude Include="utility\dbgutil.hpp" />
+    <ClInclude Include="utility\mapfile.hpp" />
+    <ClInclude Include="utility\strutil.hpp" />
+    <ClInclude Include="utility\timeutil.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -128,9 +143,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="ConfigMaker.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
