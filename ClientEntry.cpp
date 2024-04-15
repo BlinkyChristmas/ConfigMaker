@@ -133,7 +133,7 @@ auto ClientEntry::write(std::ostream &output) const -> void  {
 
     output << "#" << std::endl;
     output << "# Pru settings" << std::endl;
-    output << "# pru = #(0,1), mode (0=SSD,1=DMX,2=WS2812), offset (offset to place in the OUTPUT stream), length (how much of the data to grab)" << std::endl;
+    output << "pru = #(0,1), mode (SSD,DMX,WS2812), [ Desired output length( 0 takes default for transport. WS2812 is the only one this really makes sense on). ]" << std::endl;
     for (const auto &value: pru) {
         output << "pru = " << value << std::endl;
     }
