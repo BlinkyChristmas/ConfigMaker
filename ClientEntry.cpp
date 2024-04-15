@@ -133,7 +133,7 @@ auto ClientEntry::write(std::ostream &output) const -> void  {
 
     output << "#" << std::endl;
     output << "# Pru settings" << std::endl;
-    output << "pru = #(0,1), mode (SSD,DMX,WS2812), [ Desired output length( 0 takes default for transport. WS2812 is the only one this really makes sense on). ]" << std::endl;
+    output << "pru = #(0,1), mode (SSD,DMX,WS2812),[inputoffset where data should be taken from the light frame, defaults to 0], [ Desired output length( 0 takes default for transport. WS2812 is the only one this really makes sense on). ]" << std::endl;
     for (const auto &value: pru) {
         output << "pru = " << value << std::endl;
     }
